@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+
+# Chaves e certificados gerados localmente
+# A CA privada nunca deve ser versionada.
+ca_key.pem
+# O certificado publico da CA deve ser distribuido/copiado por canal confiavel,
+# nao aceite automaticamente pela rede nem misturado com chaves de teste.
+ca_cert.pem
+*_privada.pem
+*_publica.pem
+*_cert.pem
+
+# Dados de runtime / persistencia local
+bd_utilizadores.json
+mensagens_offline.json
+
+# Sistema operativo / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
